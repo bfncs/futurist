@@ -7,7 +7,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "babel -o dist/index.js src/index.js",
+    "prepublish": "npm run test && npm run build",
+    "build": "rimraf dist/* && babel --ignore *.test* -d dist src",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -25,6 +26,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-2": "^6.24.1",
     "jest": "^20.0.4",
-    "regenerator-runtime": "^0.11.0"
+    "regenerator-runtime": "^0.11.0",
+    "rimraf": "^2.6.1"
   }
 }
