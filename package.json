@@ -2,6 +2,7 @@
   "name": "futurist",
   "version": "0.0.2",
   "description": "Execute promises with limited parallelism",
+  "repository": "bfncs/futurist",
   "main": "dist/index.js",
   "files": [
     "dist"
