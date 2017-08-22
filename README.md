@@ -4,6 +4,17 @@
 
 Futurist helps executing promises with limited parallelism.
 
+## Install
+
+```
+# If you are using npm
+npm install futurist
+
+# If you are using yarn
+yarn add futurist
+```
+
+
 ## Usage
 
 ```js
